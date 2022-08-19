@@ -1,0 +1,64 @@
+PART I
+make a directory called first
+keelan@DESKTOP-CKOTPN0:~$ mkdir first
+
+change directory to the first folder
+keelan@DESKTOP-CKOTPN0:~$ cd first
+
+create a file called person.txt
+keelan@DESKTOP-CKOTPN0:~/first$ touch person.txt
+
+change the name of person.txt to another.txt
+keelan@DESKTOP-CKOTPN0:~/first$ mv person.txt another.txt
+
+make a copy of the another.txt file and call it copy.txt
+keelan@DESKTOP-CKOTPN0:~/first$ cp another.txt copy.txt
+
+remove the copy.txt file
+keelan@DESKTOP-CKOTPN0:~/first$ rm copy.txt
+
+make a copy of the first folder and call it second
+keelan@DESKTOP-CKOTPN0:~/first$ cp -r first second
+keelan@DESKTOP-CKOTPN0:~/first$ cd ..
+
+delete the second folder
+keelan@DESKTOP-CKOTPN0:~$ rm -rf second
+
+
+PART II 
+What does the man command do? Type in man rm. How do you scroll and get out?
+keelan@DESKTOP-CKOTPN0:~$ man rm
+it lists the manual for the command, use D to go forward, B to go back a page, U to go back half a page
+
+Look at the man page for ls. What does the -l flag do? What does the -a flag -do?
+keelan@DESKTOP-CKOTPN0:~$ man ls
+-l uses a long listing format with more detail
+-a shows files even with a . (meaning it shows hidden files)
+
+How do you jump between words in the terminal?
+control + left/right arrows
+
+How do you get to the end of a line in terminal?
+control + e
+
+How do you move your cursor to the beginning in terminal? 
+control + a
+
+How do you delete a word (without pressing backspace multiple times) in -terminal?
+control + backspace
+
+What is the difference between a terminal and shell?
+The shell is what process the actual commands, the terminal is just the way we interact with it
+
+What is an absolute path?
+A path that gives the complete location for a folder, starting with the root
+
+What is an relative path?
+A path that gives the location relative to the current location
+
+What is a flag? Give three examples of flags you have used.
+It gives a command extra information as to how you want it to function in that instance. We used -rf for the rm command, -r for the cp command, and looked at -a for the ls command
+
+What do the r and f flags do with the rm command?
+-f ignores nonexistent files and arguments and doesn't prompt for removal; just forcibly removes everything
+-r recursively removes directories and their contents
